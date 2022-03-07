@@ -1,0 +1,24 @@
+service: example-graphql-api
+ 
+plugins:
+  - serverless-plugin-typescript
+  - serverless-offline
+ 
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-southeast-1
+ 
+functions:
+  graphql:
+    handler: src/handler.graphql
+    events:
+      - http:
+          path: graphql
+          method: post
+          cors: true
+      - http:
+          path: graphql
+          method: get
+          cors: true
