@@ -1,2 +1,3 @@
-A Sample GraphQL server witih minimal schema + Serverless framework.
-<code>sls deploy</code> to get the link to the GraphQL API.
+A Sample GraphQL server witih minimal schema + [Serverless framework](https://www.serverless.com/).
+
+Run <code>sls deploy</code> to access the browser-based GraphQL API.
